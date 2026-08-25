@@ -57,6 +57,7 @@ export interface EducationItem {
   readonly institution: string
   readonly qualification: string
   readonly result: string
+  readonly courses: readonly string[]
 }
 
 export interface PortfolioContent {
