@@ -15,6 +15,7 @@ export const portfolioContent: PortfolioContent = {
     { label: 'Work', path: '/work' },
     { label: 'About', path: '/about' },
     { label: 'Contact', path: '/contact' },
+    { label: 'Recommendations', path: '/recommendations' },
   ],
   socialLinks: [
     { label: 'LeetCode', href: 'https://leetcode.com/', icon: 'code' },
@@ -25,9 +26,9 @@ export const portfolioContent: PortfolioContent = {
     { label: 'Phone', href: 'tel:+910000000000', icon: 'phone' },
   ],
   metrics: [
-    { value: '2B+', label: 'USD daily transaction volume supported' },
+    { value: 'E2E', label: 'frontend ownership for a Cash Equities OMS' },
     { value: '800+', label: 'algorithmic problems solved' },
-    { value: '9.48', label: 'engineering CGPA / 10' },
+    { value: '2', label: 'domains: trading infrastructure and applied GenAI' },
   ],
   principles: [
     { title: 'Make complexity legible', description: 'Turn dense business rules into interfaces that help people make confident decisions.' },
@@ -62,9 +63,9 @@ export const portfolioContent: PortfolioContent = {
     },
   ],
   projects: [
-    { id: 'stp2', eyebrow: 'Production system · Cash Equities', title: 'Order Management System', description: 'A straight-through processing platform for institutional Cash Equities orders, built around high-trust workflows and event-driven services.', outcome: 'Supports a daily transaction volume of approximately 2B USD.', technologies: ['React', 'TypeScript', 'Java', 'Kafka'], accent: 'blue' },
-    { id: 'sales-assistant', eyebrow: 'GenAI · Automation', title: 'Sales Assistant', description: 'A platform that turns natural-language instructions into executable browser automation for repetitive sales operations.', outcome: 'Combines script generation, live execution, screenshots, and concise summaries.', technologies: ['Python', 'Playwright', 'Selenium', 'Generative AI'], accent: 'coral' },
-    { id: 'derivatives-rag', eyebrow: 'GenAI · Knowledge retrieval', title: 'Derivatives Knowledge Assistant', description: 'A domain-focused RAG system that makes large volumes of derivatives documentation easier to search and understand.', outcome: 'Uses intelligent chunking, semantic embeddings, and FAISS similarity search.', technologies: ['Python', 'LangChain', 'FAISS', 'RAG'], accent: 'yellow' },
+    { id: 'stp2', eyebrow: 'Production system · Cash Equities', title: 'Order Management System', description: 'A straight-through processing platform for institutional Cash Equities orders across multiple global markets, managing the complete order lifecycle.', outcome: 'Supports a daily transaction volume of approximately 2B USD.', technologies: ['React', 'TypeScript', 'Java', 'Kafka'], accent: 'blue', company: 'Morgan Stanley · Wissen Technology', role: 'Frontend owner and full-stack engineer', responsibilities: ['Owned the complete frontend under the project manager, from requirements discovery through production delivery.', 'Designed reusable React architecture, workflow-driven interfaces, AG Grid views, and React Hook Form validation flows.', 'Developed Java and Spring Boot workflow services, secure REST APIs, and peripheral backend services.'], contributions: ['Delivered Order Blotter, Order Entry, one-click Clone Order, and Batch Order Entry for Australian Financial Advisors.', 'Supported routing, execution, fills, cancel/replace, allocation amendments, booking, trade summaries, audit trails, validation history, and event tracking.', 'Integrated pre-trade rules, client suitability, headroom, fee and commission, post-trade, and surveillance platforms through distributed workflows.'] },
+    { id: 'sales-assistant', eyebrow: 'GenAI · Automation', title: 'Sales Assistant', description: 'A Generative AI workflow automation platform built during the Morgan Stanley internship to reduce repetitive operational work for investment banking sales teams.', outcome: 'Combines natural-language script generation, live execution, screenshot capture, and concise AI summaries.', technologies: ['Python', 'Playwright', 'Selenium', 'Generative AI'], accent: 'coral', company: 'Morgan Stanley · Wissen Technology', role: 'Software engineering intern and POC developer', responsibilities: ['Designed the platform workflow that translates natural-language instructions into Playwright and Selenium automation scripts.', 'Integrated script execution, automatic screenshot capture, and AI-generated execution summaries into one experience.'], contributions: ['Automated repetitive sales-team workflows and reduced dependency on manual interventions.', 'Improved access to processed outcomes by giving users faster execution feedback and review-ready summaries.'] },
+    { id: 'derivatives-rag', eyebrow: 'GenAI · Knowledge retrieval', title: 'Derivatives Knowledge Assistant', description: 'A domain-focused Retrieval-Augmented Generation platform built during the Morgan Stanley internship to make derivatives documentation easier to search and understand.', outcome: 'Uses intelligent preprocessing, semantic embeddings, and FAISS similarity search for context-aware answers.', technologies: ['Python', 'LangChain', 'FAISS', 'RAG'], accent: 'yellow', company: 'Morgan Stanley · Wissen Technology', role: 'Software engineering intern and RAG architect', responsibilities: ['Designed the overall RAG architecture around derivatives-specific requirements and enterprise knowledge retrieval.', 'Built document preprocessing, intelligent chunking, embedding generation, vector indexing, retrieval, and generation pipelines.'], contributions: ['Used Sentence Transformers to represent unstructured financial documents semantically.', 'Stored and indexed embeddings in FAISS to enable fast, scalable similarity search and context-aware responses.'] },
   ],
   education: [
     { period: '2021 — 2025', institution: 'Siddaganga Institute of Technology', qualification: 'B.E. Computer Science & Engineering', result: 'CGPA 9.48 / 10' },
@@ -78,4 +79,18 @@ export const portfolioContent: PortfolioContent = {
     'Achieved Rank 1 in DeCoders CodeItOut and 3rd Place in GeeksforGeeks Runtime Riot.',
   ],
   domainExpertise: ['Full Stack Application Development', 'Distributed Systems', 'Event-Driven Architecture', 'REST API Design', 'Workflow Automation', 'Microservices', 'Enterprise Software Development', 'Investment Banking Technology'],
+  toolkit: [
+    { name: 'Python', mark: 'Py', color: '#3776ab' },
+    { name: 'JavaScript', mark: 'JS', color: '#d9a514' },
+    { name: 'TypeScript', mark: 'TS', color: '#3178c6' },
+    { name: 'Java', mark: 'J', color: '#e76f00' },
+    { name: 'Spring Boot', mark: 'SB', color: '#6db33f' },
+    { name: 'Spring Data JPA', mark: 'JPA', color: '#387c44' },
+    { name: 'React', mark: 'R', color: '#149eca' },
+    { name: 'Apache Kafka', mark: 'K', color: '#8b5cf6' },
+  ],
+  recommendations: {
+    enabled: true,
+    items: [],
+  },
 }

@@ -17,7 +17,7 @@ export function Layout() {
           <span />
         </button>
         <nav className={isMenuOpen ? 'site-nav is-open' : 'site-nav'} aria-label="Primary navigation">
-          {portfolioContent.navigation.map((item) => (
+          {portfolioContent.navigation.filter((item) => item.path !== '/recommendations' || portfolioContent.recommendations.enabled).map((item) => (
             <NavLink key={item.path} to={item.path} onClick={() => setIsMenuOpen(false)} className={({ isActive }) => isActive ? 'active' : ''}>
               {item.label}
             </NavLink>

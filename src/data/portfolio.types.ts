@@ -1,4 +1,4 @@
-export type RoutePath = '/' | '/work' | '/about' | '/contact'
+export type RoutePath = '/' | '/work' | '/about' | '/contact' | '/recommendations'
 
 export type IconName = 'arrowUpRight' | 'github' | 'linkedin' | 'mail' | 'mapPin' | 'instagram' | 'code' | 'phone'
 
@@ -11,6 +11,20 @@ export interface SocialLink {
   readonly label: string
   readonly href: string
   readonly icon: IconName
+}
+
+export interface ToolkitItem {
+  readonly name: string
+  readonly mark: string
+  readonly color: string
+}
+
+export interface Recommendation {
+  readonly id: string
+  readonly name: string
+  readonly role: string
+  readonly quote: string
+  readonly linkedin: string
 }
 
 export interface ExperienceItem {
@@ -31,7 +45,11 @@ export interface ProjectItem {
   readonly description: string
   readonly outcome: string
   readonly technologies: readonly string[]
-  readonly accent: 'blue' | 'coral' | 'yellow'
+  readonly accent: 'blue' | 'coral' | 'yellow' | 'green' | 'red' | 'orange'
+  readonly company: string
+  readonly role: string
+  readonly responsibilities: readonly string[]
+  readonly contributions: readonly string[]
 }
 
 export interface EducationItem {
@@ -62,4 +80,9 @@ export interface PortfolioContent {
   readonly education: readonly EducationItem[]
   readonly achievements: readonly string[]
   readonly domainExpertise: readonly string[]
+  readonly toolkit: readonly ToolkitItem[]
+  readonly recommendations: {
+    readonly enabled: boolean
+    readonly items: readonly Recommendation[]
+  }
 }
